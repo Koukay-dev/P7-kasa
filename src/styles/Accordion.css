@@ -1,7 +1,6 @@
 .accordion {
   margin: 33px;
   overflow: hidden;
-  height: 100%;
   & .accordion-header {
     display: flex;
     justify-content: space-between;
@@ -16,21 +15,37 @@
       color: var(--second-font-color);
       font-weight: 500;
     }
+    & img {
+      transform: rotate(0deg);
+      transition: transform 0.5s cubic-bezier(1, -0.56, 0.16, 1.47);
+    }
   }
   & p {
     border-radius: 5px;
     background: var(--main-bg-color);
-    padding: 20px;
+    padding-inline: 20px;
     position: relative;
     z-index: -1;
+    overflow: hidden;
   }
   & .close {
     transform: translateY(-100%);
+    padding-block: 0px;
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+  & .open {
+    opacity: 1;
+    transform: translateY(-5%);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    max-height: 300px;
+    transition: all 0.5s ease-in-out;
   }
 
   & .rotate {
-    transform: rotate(180deg);
+    transform: rotate(180deg) !important;
+    transition: transform 0.5s cubic-bezier(1, -0.56, 0.16, 1.47);
   }
 }

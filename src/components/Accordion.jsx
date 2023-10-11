@@ -17,7 +17,7 @@ function Accordion({ title, content }) {
           className={accordionIsOpen ? 'rotate' : ''}
         />
       </div>
-      <p className={!accordionIsOpen ? 'close' : ''}>{content}</p>
+      <p className={!accordionIsOpen ? 'close' : 'open'}>{content}</p>
     </div>
   )
 }

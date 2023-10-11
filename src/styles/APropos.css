@@ -5,3 +5,11 @@
     max-width: 85%;
   }
 }
+
+@media (max-width: 750px) {
+  #a-propos-container {
+    & .accordion-section {
+      max-width: 100%;
+    }
+  }
+}

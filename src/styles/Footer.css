@@ -1,4 +1,5 @@
 footer {
+  margin-top: 150px !important;
   background-color: black;
   color: var(--second-font-color);
   display: flex;
