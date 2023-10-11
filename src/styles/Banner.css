@@ -1,0 +1,30 @@
+.img-banner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  & > * {
+    margin: auto;
+  }
+
+  & img {
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    filter: brightness(80%);
+    height: 223px;
+  }
+
+  & h1 {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    color: var(--second-font-color);
+    line-height: 142.6%;
+    font-size: 48px;
+    white-space: nowrap;
+  }
+}

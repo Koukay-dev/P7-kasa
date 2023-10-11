@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); /* Montserrat */
+
+:root {
+  --main-color-red: #ff6060;
+  --second-font-color: #fff;
+  --main-bg-color: #f6f6f6;
+}
+
+* {
+  font-family: 'Montserrat', 'Trebuchet MS', Helvetica, sans-serif;
+  color: var(--main-color-red);
+  line-height: 142.6%; /*34.224px*/
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}

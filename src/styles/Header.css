@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  max-width: 1240px;
+  padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px !important;
+
+  & > * {
+    padding-inline: 10px;
+  }
+}
+
+nav {
+  text-align: end;
+  & > * {
+    padding-left: 35px;
+    text-align: right;
+    font-size: 24px;
+  }
+  & a:hover {
+    text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    & img {
+      max-width: 145px;
+      width: 100%;
+      min-width: 95px;
+    }
+  }
+  nav a {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-inline: 5px;
+    white-space: nowrap;
+  }
+}

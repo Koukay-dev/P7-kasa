@@ -1,0 +1,7 @@
+#a-propos-container {
+  max-width: 1240px;
+  & .accordion-section {
+    margin: auto;
+    max-width: 85%;
+  }
+}

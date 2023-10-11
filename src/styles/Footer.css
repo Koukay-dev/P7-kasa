@@ -1,0 +1,21 @@
+footer {
+  background-color: black;
+  color: var(--second-font-color);
+  display: flex;
+  flex-direction: column;
+  padding-top: 66px;
+}
+
+footer > * {
+  margin: auto;
+  color: var(--second-font-color);
+  padding-bottom: 29px;
+}
+
+footer svg {
+  height: 39.444px;
+}
+
+footer svg > * {
+  fill: var(--second-font-color);
+}

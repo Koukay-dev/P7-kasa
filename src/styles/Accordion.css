@@ -1,0 +1,36 @@
+.accordion {
+  margin: 33px;
+  overflow: hidden;
+  height: 100%;
+  & .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background: var(--main-color-red);
+    cursor: pointer;
+    & > * {
+      margin-inline: 18px;
+    }
+    & h3 {
+      font-size: 24px;
+      color: var(--second-font-color);
+      font-weight: 500;
+    }
+  }
+  & p {
+    border-radius: 5px;
+    background: var(--main-bg-color);
+    padding: 20px;
+    position: relative;
+    z-index: -1;
+  }
+  & .close {
+    transform: translateY(-100%);
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  & .rotate {
+    transform: rotate(180deg);
+  }
+}
