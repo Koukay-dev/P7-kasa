@@ -17,7 +17,15 @@ function Accordion({ title, content }) {
           className={accordionIsOpen ? 'rotate' : ''}
         />
       </div>
-      <p className={!accordionIsOpen ? 'close' : 'open'}>{content}</p>
+      {Array.isArray(content) ? (
+        <ul className={!accordionIsOpen ? 'close' : 'open'}>
+          {content.map((element, index) => (
+            <li key={element + index}>{element}</li>
+          ))}
+        </ul>
+      ) : (
+        <p className={!accordionIsOpen ? 'close' : 'open'}>{content}</p>
+      )}
     </div>
   )
 }

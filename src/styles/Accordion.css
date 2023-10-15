@@ -20,7 +20,8 @@
       transition: transform 0.5s cubic-bezier(1, -0.56, 0.16, 1.47);
     }
   }
-  & p {
+  & p,
+  ul {
     border-radius: 5px;
     background: var(--main-bg-color);
     padding-inline: 20px;

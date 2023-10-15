@@ -1,0 +1,11 @@
+#page-logement {
+  max-width: 1240px;
+  & h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  & .logement-head-info {
+    display: flex;
+  }
+}

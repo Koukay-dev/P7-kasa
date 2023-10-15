@@ -1,0 +1,5 @@
+.Rating {
+  & > * {
+    padding-inline: 3px;
+  }
+}
