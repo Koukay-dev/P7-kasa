@@ -12,6 +12,7 @@
   line-height: 142.6%; /*34.224px*/
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 ul {

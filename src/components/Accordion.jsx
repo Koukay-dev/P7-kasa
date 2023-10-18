@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import fleche from '../assets/fleche.svg'
+import fleche from '../assets/fleche-accordion.svg'
 import '../styles/Accordion.css'
 
 function Accordion({ title, content }) {

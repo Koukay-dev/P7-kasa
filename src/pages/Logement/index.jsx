@@ -10,6 +10,9 @@ import Rating from '../../components/Rating'
 function Logement() {
   const { id } = useParams()
   const logement = logements.find((logement) => logement.id === id)
+  if (!logement) {
+    return null
+  }
   console.log(logement)
   return (
     <section id="page-logement">
