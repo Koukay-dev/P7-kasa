@@ -1,18 +1,14 @@
 import '../../styles/Logement.css'
 import logements from '../../datas/logements.json'
 import Carrousel from '../../components/Carrousel'
-import { useParams } from 'react-router-dom'
+import { useLoaderData } from 'react-router-dom'
 import Accordion from '../../components/Accordion'
 import Tags from '../../components/Tags'
 import Host from '../../components/Host'
 import Rating from '../../components/Rating'
 
 function Logement() {
-  const { id } = useParams()
-  const logement = logements.find((logement) => logement.id === id)
-  if (!logement) {
-    return null
-  }
+  const logement = useLoaderData()
   console.log(logement)
   return (
     <section id="page-logement">
@@ -37,3 +33,11 @@ function Logement() {
 }
 
 export default Logement
+
+export const logementLoader = ({ params }) => {
+  const logement = logements.find((logement) => logement.id === params.id)
+  if (logement === undefined) {
+    throw new Response('Not Found', { status: 404 })
+  }
+  return logement
+}
