@@ -30,7 +30,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 860px) {
   .img-banner {
     margin-inline: 0px;
 
@@ -41,5 +41,8 @@
       max-width: 230px;
       margin-left: 25px;
     }
+  }
+  .banner-with-text {
+    max-height: 115px;
   }
 }
