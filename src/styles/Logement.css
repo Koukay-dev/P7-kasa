@@ -7,5 +7,38 @@
 
   & .logement-head-info {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .logement-info-title {
+      & .logement-tags {
+        margin-top: 20px;
+      }
+    }
+
+    & .host-info-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > * {
+        margin-block: 10px;
+      }
+    }
   }
+
+  & .accordions-container {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      flex: 1;
+      max-width: 582px;
+    }
+    & > :first-child {
+      margin-left: 76px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

@@ -1,5 +1,5 @@
 .logement-tags {
-  display: flex;
+  display: inline-flex;
   & p {
     border-radius: 10px;
     background: #ff6060;
@@ -9,6 +9,6 @@
     padding-inline: 15px;
     text-align: center;
     font-size: 14px;
-    margin-inline: 10px;
+    margin-right: 20px;
   }
 }

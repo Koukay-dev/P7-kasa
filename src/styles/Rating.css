@@ -1,5 +1,9 @@
 .Rating {
+  display: inline-flex;
+  max-width: 196px;
+  width: 100%;
   & > * {
     padding-inline: 3px;
+    width: 100%;
   }
 }

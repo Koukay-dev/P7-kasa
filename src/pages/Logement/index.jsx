@@ -25,8 +25,16 @@ function Logement() {
         </div>
       </div>
       <div className="accordions-container">
-        <Accordion title="Description" content={logement.description} />
-        <Accordion title="Equipement" content={logement.equipments} />
+        <Accordion
+          title="Description"
+          content={logement.description}
+          logementAccordion={true}
+        />
+        <Accordion
+          title="Equipement"
+          content={logement.equipments}
+          logementAccordion={true}
+        />
       </div>
     </section>
   )

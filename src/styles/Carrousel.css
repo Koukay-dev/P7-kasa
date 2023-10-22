@@ -39,4 +39,11 @@
       transform: rotate(180deg);
     }
   }
+  & .carrousel-counter {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    left: 49%;
+    margin-bottom: 25px;
+  }
 }

@@ -47,6 +47,9 @@ function Carrousel({ images }) {
           >
             <img src={fleche} alt="Flèche de gauche du carrousel" />
           </button>
+          <span className="carrousel-counter">{`${
+            imgIndex + 1
+          }/${imagesLength}`}</span>
         </>
       )}
     </div>

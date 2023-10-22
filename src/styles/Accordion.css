@@ -50,3 +50,9 @@
     transition: transform 0.5s cubic-bezier(1, -0.56, 0.16, 1.47);
   }
 }
+
+@media all and (max-width: 768px) {
+  .accordion {
+    margin-inline: 0px;
+  }
+}
