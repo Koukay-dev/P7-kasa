@@ -7,7 +7,7 @@ function Accordion({ title, content, logementAccordion = false }) {
   return (
     <div
       className="accordion"
-      style={logementAccordion ? { marginInline: '0px' } : {}}
+      style={logementAccordion ? { margin: '10px 0px' } : {}}
     >
       <div
         className="accordion-header"

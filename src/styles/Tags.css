@@ -2,7 +2,7 @@
   display: inline-flex;
   & p {
     border-radius: 10px;
-    background: #ff6060;
+    background: var(--main-color-red);
     color: var(--second-font-color);
     min-width: 100px;
     padding-block: 2px;
@@ -10,5 +10,16 @@
     text-align: center;
     font-size: 14px;
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .logement-tags {
+    flex-wrap: wrap;
+    & p {
+      margin-bottom: 5px;
+      min-width: 84px;
+      white-space: nowrap;
+    }
   }
 }
