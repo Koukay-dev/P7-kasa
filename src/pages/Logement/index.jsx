@@ -42,6 +42,7 @@ function Logement() {
 
 export default Logement
 
+// Gestion des erreurs au fetch
 export const logementLoader = ({ params }) => {
   const logement = logements.find((logement) => logement.id === params.id)
   if (logement === undefined) {
